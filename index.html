@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalabale=0"
+    />
+    <title>Valentyna Levchenko CV</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Podkova:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="popup__bg">
+      <div class="popup">
+        <p>Вітаю на сторінці мого резюме.</p>
+        <p>Перед тим, як показати вам основну інформацію, хочу подякувати за можливість стати вашою колегою в майбутньому.</p>
+        <p>Творчі та технічні здібності крокують разом у моєму житті (в зв'язку з роботою по спеціальності в минулому). Вважаю поєднання цих двох аспектів невід'ємною частиною моєї
+        особистості та успішної роботи у вашій компанії.</p>
+        <p>На сторінці в розділі CONTACT DETAILS є живі лінки для прямого написання листа по email та лінк на мою сторінку на GitHub.</p>
+        <p>Також у вас є можливість вивантажити моє резюме у форматі PDF з Google диску(доступ файлу я відкрила)</p>
+        <button onClick="openMain()" class="show-main">Поїхали</button>
+        
+         
+      </div>
+    </div>
+    <div class="wrapper hide">
+      <main class="page">
+        <aside class="sidebar">
+
+            <div class="sidebar__photo">
+              <img src="./img/photoCV.jpeg" alt="" />
+            </div>
+            <section class="sidebar__block block">
+              <div class="block__header">
+                <img class="block__icon" src="./img/icons/soft.png" />
+                <h2 class="block__title">SOFT SKILLS</h2>
+              </div>
+              <div class="block__description">
+                <ul class="block__text">
+                  <li>high level of responsibility</li>
+                  <li>always learn something new</li>
+                  <li>motivated for new experience</li>
+                  <li>self taught</li>
+                </ul>
+              </div>
+            </section>
+            <section class="sidebar__block block">
+              <div class="block__header">
+                <img class="block__icon" src="./img/icons/hard.png" />
+                <h2 class="block__title">HARD SKILLS</h2>
+              </div>
+              <div class="block__description">
+                <ul class="block__text">
+                  <li>HTML, CSS, SASS</li>
+                  <li>JavaScript, React.js, Redux.js</li>
+                  <li>WordPress</li>
+                  <li>GitHub, Git</li>
+                </ul>
+              </div>
+            </section>
+            <section class="sidebar__block block">
+              <div class="block__header">
+                <img class="block__icon" src="./img/icons/technologies.png" />
+                <h2 class="block__title">TECHNOLOGIES</h2>
+              </div>
+              <div class="block__description">
+                <ul class="block__text">
+                  <li>IDE (VS code, Sublime text editor)</li>
+                  <li>Version control (GitHub, BitBucket)</li>
+                  <li>Module bundler WebPack</li>
+                  <li>NPM</li>
+                  <li>Styling: BEM technologie</li>
+                </ul>
+              </div>
+            </section>
+            <section class="sidebar__block block">
+              <div class="block__header">
+                <img class="block__icon" src="./img/icons/languages.png" />
+                <h2 class="block__title">LANGUAGES</h2>
+              </div>
+              <div class="block__description">
+                <ul class="block__text">
+                  <li><b>english </b>- intermediate</li>
+                  <li><b>russian </b>- professional</li>
+                  <li><b>ukraininan </b>- native</li>
+                </ul>
+              </div>
+            </section>
+            <section class="sidebar__block block">
+              <div class="block__header">
+                <img class="block__icon" src="./img/icons/contact.png" />
+                <h2 class="block__title">CONTACT DETAILS</h2>
+              </div>
+              <div class="block__description">
+                <ul class="block__text contact_details">
+                  <li>+38(097)-826-61-19</li>
+                  <li>
+                    <address><a target="_blank" href="mailto:valyaproject@gmail.com">valyaproject@gmail.com</a>
+                    </address>
+                    </li>
+                  <li>
+                    <a target="_blank" href="https://github.com/valensiaa">my page on GitHub</a>
+                    </li>
+                  <li>
+                    <address><b>Kyiv</b>, Ukraine</address>
+                    </li>
+                </ul>
+              </div>
+            </section>
+        </aside>
+        <div class="main">
+
+            <header class="main__header">
+              <h1>VALENTYNA LEVCHENKO</h1>
+              <div>
+                <span>Junior Frontend Developer</span>
+                </div>
+              <p>
+                I am a Frontend Developer who has worked:
+              </p>
+              <ul>
+                <li>by specialty as projects engineer</li>
+                <li>as calligraphy's designer</li>
+                <li>as content-manager, online-shop manager</li>
+                <li>as WordPress developer</li>
+              </ul>
+              <p>
+                I am a fast learner and can quickly integrate into a team so I
+                can provide value to the company and costumers
+              </p>
+            </header>
+            <div class="main__content">
+              
+                <section class="main__block block">
+                  <div class="block__header">
+                    <img class="block__icon" src="./img/icons/professional.png" />
+                    <h2 class="block__title">PROFESSIONAL EXPERIENCE</h2>
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">WordPress developer, Content-Manager</h3>
+                    <span class="block__data">Freelance | january 2018 -</span>
+                   
+                      <ul class="block__text">
+                        <li>had run my online store on WordPress CMS, had designed banners on the site, made advertising of design products,
+                        content management</li>
+                      </ul>
+             
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">
+                      Frontend developer
+                    </h3>
+                    <span class="block__data">Internship, Relate Data | december 2017 - january 2018</span>
+                   
+                      <ul class="block__text">
+                        <li>worked as intern on frontend side with module bundler WebPack - made bug fixing and refactoring</li>
+                      </ul>
+             
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">Frontend Developer</h3>
+                    <span class="block__data">Internship, WebFreaming | march 2017 - september 2017</span>
+                   
+                      <ul class="block__text">
+                        <li>fixed bugs using Bitbucket as Git repository management solution</li>
+                      </ul>
+                  
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">Wordpress Developer</h3>
+                    <span class="block__data">Freelance | january 2016 - december 2017</span>
+                  
+                      <ul class="block__text">
+                        <li>developed websites on WordPress CMS</li>
+                        <li>created the content filling of the site</li>
+                        <li>worked on the WordPress site as an administrator.</li>
+                      </ul>
+                 
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">Project Engineer</h3>
+                    <span class="block__data">Secure Systems | april 2009 - june 2015</span>
+                    <ul class="block__text">
+                      <li>worked by specialty as a designer of fire protecting systems</li>
+                      
+                    </ul>
+                  </div>
+                </section>
+                <section class="main__block block">
+                  <div class="block__header">
+                    <img class="block__icon" src="./img/icons/education.png" />
+                    <h2 class="block__title">EDUCATION</h2>
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">
+                      React.js social media development
+                    </h3>
+                    <span class="block__data"
+                      >React JS online course, 2021</span
+                    >
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">JavaScript development</h3>
+                    <span class="block__data"
+                      >Vladlen Minin online course, 2021</span
+                    >
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">
+                      Frontend development, JavaScript development
+                    </h3>
+                    <span class="block__data"
+                      >"WebCamp" courses, Kyiv, 2016</span
+                    >
+                  </div>
+                  <div class="block__description _anim-items">
+                    <h3 class="block__subtitle">
+                      Kyiv National University of Construction and Architecture
+                    </h3>
+                    <span class="block__data"
+                      >Bachelor of Engineering - Systems Engineering, 2010</span
+                    >
+                  </div>
+                </section>
+                <section class = "main__block block">
+                  <div class="block__header">
+                    <a target="_blank" href="https://drive.google.com/file/d/1QLT0M67SX1O6Kil68yBAhWM0laxA3ji4/view?usp=sharing">Click to download my CV from Google Drive</a>
+                  </div>
+                </section>
+                  
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

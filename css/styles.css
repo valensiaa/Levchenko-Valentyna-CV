@@ -1,0 +1,295 @@
+/* reset default styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 15px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+/* COMMON STYLES */
+:root {
+  --main-text-font: "Lato", sans-serif;
+}
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.wrapper.hide {
+  display: none;
+}
+p,
+span,
+li {
+  font-family: var(--main-text-font);
+}
+h1,
+h2 {
+  font-family: "Podkova", serif;
+  color: #e1d8cf;
+}
+.block {
+  margin: 15px 15px 0px 15px;
+}
+.block__icon {
+  width: 30px;
+  padding-right: 8px;
+  height: auto;
+}
+.block__header {
+  display: flex;
+  flex-direction: row;
+  background-color: #373741;
+  padding: 10px;
+  align-items: center;
+}
+.block__header h2 {
+  font-size: 20px;
+}
+.block__description {
+  padding: 10px;
+}
+.block__subtitle {
+  font-family: var(--main-text-font);
+  font-weight: bold;
+  font-size: 19px;
+  padding-bottom: 5px;
+}
+.block__data {
+  font-style: italic;
+  font-size: 16px;
+}
+.block__text {
+  font-size: 18px;
+  padding-left: 15px;
+}
+.block__text li {
+  list-style-type: "- ";
+  padding: 5px 0;
+  line-height: 20px;
+}
+.block__text li:last-child {
+  padding-bottom: 0px;
+}
+/*--------------------*/
+
+/* MAIN */
+.main {
+  flex: 1 1 auto;
+}
+.main__header {
+  padding: 20px;
+  background-color: #373741;
+  color: white;
+}
+.main__header h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.main__header div {
+  text-align: center;
+}
+.main__header span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.main__header p {
+  padding: 15px 0;
+  line-height: 20px;
+}
+.main__header p,
+.main__header ul li {
+  font-size: 18px;
+  padding: 5px 0px;
+}
+.main__header ul {
+  padding-left: 15px;
+}
+.main__header ul li {
+  list-style-type: "- ";
+}
+.block__header a {
+  font-family: "Podkova", serif;
+  color: #e1d8cf;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+}
+/*--------------------*/
+
+/* SIDEBAR */
+aside {
+  flex: 0 0 35%;
+  background-color: #e1d8cf;
+  padding-bottom: 10px;
+}
+.sidebar__photo {
+  text-align: center;
+}
+.sidebar__photo img {
+  width: 250px;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+}
+.contact_details li {
+  list-style-type: none;
+}
+.contact_details address {
+  font-style: normal;
+}
+.contact_details li a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+/*--------------------*/
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: none;
+  }
+}
+@media (max-width: 480px) {
+  .page {
+    flex-direction: column;
+  }
+}
+
+/* POPUP */
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 70vh;
+  background: #e1d8cf;
+  display: block;
+  pointer-events: all;
+  transition: 0.5s all;
+  transform: translate(33%, 25%) scale(1);
+}
+.popup__bg.hide {
+  display: none;
+  transform: translate(0%, 0%) scale(0);
+  transition: 1s all;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 90%;
+  padding: 10px;
+}
+.show-main {
+  margin: 20px auto;
+  text-align: center;
+  font-family: "Podkova", serif;
+  color: #ffffff;
+  background-color: #373741;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.popup p {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 200;
+  padding: 5px 0px;
+}
+
+/*--------------------*/
