@@ -1,6 +1,6 @@
 
 let activeWrapper = document.querySelector('.wrapper');
-let popup = document.querySelector('.popup__bg');
+let popup = document.querySelector('.popup');
 
 function openMain() {
    activeWrapper.classList.remove('hide'); 
