@@ -232,43 +232,6 @@ aside {
 }
 /*--------------------*/
 
-/* POPUP */
-
-/* .popup {
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 300px;
-  background: #e1d8cf;
-  pointer-events: all;
-  transition: 0.5s all;
-  padding: 10px;
-}
-.popup.hide {
-  display: none;
-  transform: translate(0%, 0%) scale(0);
-  transition: 1s all;
-}
-.show-main {
-  margin: 20px auto;
-  text-align: center;
-  font-family: "Podkova", serif;
-  color: #ffffff;
-  background-color: #373741;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 20px;
-  padding: 10px 20px;
-}
-.popup p {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 200;
-  padding: 5px 0px;
-} */
-
-/*--------------------*/
-
 @media (max-width: 992px) {
   .wrapper {
     max-width: 750px;
